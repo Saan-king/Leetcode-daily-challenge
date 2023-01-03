@@ -56,3 +56,6 @@ class Solution {
         return count;
     }
 }
+
+T.C:O(N+K)
+S.C:O(1)
