@@ -44,8 +44,9 @@ Java Solution:
 class Solution {
     public int minDeletionSize(String[] strs) {
         int count=0;
-        for(int i=0;i<strs[0].length();i++){
-            for(int j=1;j<strs.length;j++){
+        // make it as a grid,
+        for(int i=0;i<strs[0].length();i++){ //here i the column(string length)
+            for(int j=1;j<strs.length;j++){  //here j is the rows
                 if(strs[j].charAt(i)<strs[j-1].charAt(i)){
                     count++;
                     break;
