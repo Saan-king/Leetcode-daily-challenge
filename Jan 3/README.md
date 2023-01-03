@@ -2,7 +2,7 @@ We have N strings, each of the same length, say K, in a list strs.
   If we make a grid or matrix using these strings with one on each line,
 we want to find the number of columns in the matrix that are not in lexicographic order.
   
-##Algorithm
+Algorithm
 
 Iterate over the columns from 0 to K - 1, for each column col:
 
@@ -12,5 +12,5 @@ If the character at index col in the string strs[row] is smaller than the charac
 Otherwise, we check the next row.
 Return answer.
 
-T.C: O(N+K)
+T.C: O(N*K) //iterating over k characters in n strings
 S.C: O(1)
