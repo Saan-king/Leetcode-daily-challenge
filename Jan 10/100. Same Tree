@@ -36,3 +36,6 @@ class Solution {
         return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
     }
 }
+
+
+//T.C:O(N), S.C:O(N)
